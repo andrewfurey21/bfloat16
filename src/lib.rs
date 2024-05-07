@@ -6,11 +6,11 @@ use std::ops::{Add, Sub, Mul, Div};
 struct bfloat16(u16);
 
 impl bfloat16 {
-    fn sqrt(self, rhs: Self) -> Self {
+    fn sqrt(self) -> Self {
         return self;
     }
 
-    fn inverse_sqrt(self, rhs: Self) -> Self {
+    fn inverse_sqrt(self) -> Self {
         return self;
     }
 }
