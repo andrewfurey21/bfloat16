@@ -1,14 +1,46 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+#![allow(dead_code, unused_variables)]
+use std::ops::{Add, Sub, Mul, Div};
 
-#[cfg(test)]
-mod tests {
-    use super::*;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+#[allow(non_camel_case_types)]
+struct bfloat16(u16);
+
+impl bfloat16 {
+    fn sqrt(self, rhs: Self) -> Self {
+        return self;
+    }
+
+    fn inverse_sqrt(self, rhs: Self) -> Self {
+        return self;
     }
 }
+
+impl Add<bfloat16> for bfloat16 {
+    type Output = Self;
+    fn add(self, rhs: Self) -> Self::Output {
+        return self;
+    }
+}
+
+impl Sub<bfloat16> for bfloat16 {
+    type Output = Self;
+    fn sub(self, rhs: Self) -> Self::Output {
+        return self;
+    }
+}
+
+impl Mul<bfloat16> for bfloat16 {
+    type Output = Self;
+    fn mul(self, rhs: Self) -> Self::Output {
+        return self;
+    }
+}
+
+impl Div<bfloat16> for bfloat16 {
+    type Output = Self;
+    fn div(self, rhs: Self) -> Self::Output {
+        return self;
+    }
+}
+
+
