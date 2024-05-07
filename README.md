@@ -1,3 +1,3 @@
 # bfloat16
 
-Exploring floating point types in rust
+bfloat16 implementation in Rust.
